@@ -1,0 +1,77 @@
+body.light-mode {
+    background-color: #f3f4f6;
+    color: #1a202c;
+}
+
+.light-mode .bg-gray-700 {
+    background-color: #cbd5e0;
+}
+
+.light-mode .bg-gray-900 {
+    background-color: #ffffff;
+}
+
+.light-mode .text-gray-200 {
+    color: #4a5568;
+}
+
+.light-mode .text-gray-300 {
+    color: #1a202c;
+}
+
+.light-mode input::placeholder {
+    color: #505a6b;
+}
+
+.light-mode input:focus::placeholder {
+    color: #1a202c;
+}
+
+.light-mode input:hover::placeholder {
+    color: #2d3748;
+}
+
+/* .light-mode .bg-gray-700:hover {
+    background-color: #a0aec0;
+} */
+
+/* .light-mode .bg-gray-900:hover {
+    background-color: #e2e8f0;
+} */
+
+/* .light-mode .text-gray-200:hover {
+    color: #2d3748;
+} */
+
+.light-mode input {
+    color: #1a202c;
+}
+
+.light-mode button {
+    color: #1a202c;
+    background-color: #cbd5e0;
+    transition: background-color 0.3s ease;
+}
+
+.light-mode button:hover {
+    background-color: #a0aec0;
+}
+
+.light-mode .nav-item:hover {
+    background-color: #cbd5e0;
+}
+
+.light-mode #tweetContent {
+    color: black;
+}
+
+.light-mode .text-gray-400 {
+    color: #8d8d8d;
+}
+
+.light-mode .text-white {
+    color: #2d3748;
+}
+
+
+/*---------------------------------------*/

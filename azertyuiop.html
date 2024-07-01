@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Twitter'Academie</title>
+</head>
+
+<body class="bg-gray-900">
+    <h1 class="text-center text-4xl md:text-6xl py-7 font-bold text-gray-300">Twitter'
+        <span class="text-gray-400">Academie</span>
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-4">
+
+        <div class="w-full md:col-span-1">
+            <div class="mx-auto">
+                <div class="p-2.5 mt-3 rounded-md px-4 duration-300 cursor-pointer bg-gray-700">
+                    <input class="text-base md:text-lg ml-4 w-full bg-transparent focus:outline-none text-white"
+                        placeholder="Rechercher" />
+                </div>
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer nav-item hover:bg-gray-700">
+                    <span class="text-base md:text-lg font-bold ml-4 text-gray-200">Accueil</span>
+                </div>
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer nav-item hover:bg-gray-700">
+                    <span class="text-base md:text-lg font-bold ml-4 text-gray-200">Notifications</span>
+                </div>
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer nav-item hover:bg-gray-700">
+                    <span class="text-base md:text-lg font-bold ml-4 text-gray-200">Profil</span>
+                </div>
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer nav-item hover:bg-gray-700">
+                    <span class="text-base md:text-lg font-bold ml-4 text-gray-200">Messages</span>
+                </div>
+
+                <button onclick="openTweetPopup()" class="text-base md:text-lg mt-5  font-bold bg-black p-4 rounded-2xl ml-4 text-gray-200 hover:bg-white hover:text-black">POST</button>
+                
+                <div>
+                    <button onclick="toggleChangeTheme()" class="text-base md:text-lg mt-5  font-bold bg-black p-4 rounded-2xl ml-4 text-gray-200 hover:bg-white hover:text-black">Changer le thème</button>
+                </div>  
+            </div>
+        </div>
+
+        <div class="w-full md:col-span-2 px-2">
+            <div class="mx-auto">
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer bg-gray-700">
+                    <ul class="text-gray-200 w-full">
+                        <li class="border-b border-gray-600 py-4">
+                            <div class="">
+                                <img src="" alt="" class="h-10 w-10 rounded-full mr-4">
+                                <div>
+                                    <h2 class="text-base md:text-lg font-bold">Mell Canac</h2>
+                                    <p class="text-gray-400 text-sm md:text-base">@MeliMelo • Heure du post?</p>
+                                </div>
+                            </div>
+                            <p class="mt-2 text-sm md:text-base">Je m'apelle Mell</p>
+                        </li>
+                        <li class="border-b border-gray-600 py-4">
+                            <div class="">
+                                <img src="" alt="" class="h-10 w-10 rounded-full mr-4">
+                                <div>
+                                    <h2 class="text-base md:text-lg font-bold">Yacine Hariche</h2>
+                                    <p class="text-gray-400 text-sm md:text-base">@BateauPolice • Heure du post?</p>
+                                </div>
+                            </div>
+                            <p class="mt-2 text-sm md:text-base">Je m'apelle Yacine</p>
+                        </li>
+                        <li class="border-b border-gray-600 py-4">
+                            <div class="">
+                                <img src="" alt="" class="h-10 w-10 rounded-full mr-4">
+                                <div>
+                                    <h2 class="text-base md:text-lg font-bold">Ricardo Chaves-Rodrigues</h2>
+                                    <p class="text-gray-400 text-sm md:text-base">@RRICARDO• Heure du post?</p>
+                                </div>
+                            </div>
+                            <p class="mt-2 text-sm md:text-base">Je m'apelle Ricardo</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:col-span-1 mr-5">
+            <div class="grid-cols-3 mx-auto">
+                <div class="p-2.5 mt-2 rounded-md px-4 duration-300 cursor-pointer bg-gray-700">
+                    <span class="text-base md:text-lg font-bold ml-4 text-gray-200">Grille de droite</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tweetPopup" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-gray-800 p-8 rounded-lg relative">
+            <span class="absolute top-2 right-2 text-gray-400 cursor-pointer text-2xl hover:text-white" onclick="closeTweetPopup()">×</span>
+            <textarea id="tweetContent" class="w-full h-40 resize-none bg-gray-700 text-white p-2 rounded-md" placeholder="Quoi de neuf ?"></textarea>
+            <button onclick="closeTweetPopup()" class="mt-4 bg-black text-white font-bold px-4 py-2 rounded-md hover:bg-white hover:text-black">Tweet</button>
+        </div>
+    </div>
+
+    <script src="js/changeTheme.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
